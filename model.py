@@ -27,10 +27,6 @@ class ReflectionPadding2D(Layer):
 
 
 def get_gen_model():
-    '''
-    Model to be used as a generator using residual connections
-    here the overlaps will be taken as fixed 20 pixels
-    '''
     inp_im = Input(shape=(1200, 1600, 3), name='Input_image')
 
     inp_enh256 = Input(shape=(1200, 1600, 3), name='enh256')
